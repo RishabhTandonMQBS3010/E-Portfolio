@@ -264,7 +264,7 @@ span {
     padding: 3rem 2rem;
     text-align: center;
     transition: 0.4s ease;
-    height: 500px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -506,12 +506,7 @@ a:hover {
     }
     
     .home {
-        padding: 8rem 7% 5rem;
-        min-height: 100vh;
-    }
-    
-    .home-content {
-        max-width: 55%;
+        padding: 8rem 7%;
     }
 }
 
@@ -572,7 +567,7 @@ a:hover {
 
 /* Mobile Landscape and Small Tablets */
 @media (max-width: 768px) {
-    html { font-size: 55%; }
+    html { font-size: 50%; }
     
     .header {
         padding: 2rem 5%;
@@ -586,22 +581,34 @@ a:hover {
     .home {
         flex-direction: column;
         text-align: center;
-        padding: 10rem 5% 5rem;
-        gap: 3rem;
-        min-height: auto;
+        padding: 8rem 5% 3rem;
+        gap: 2rem;
+        height: 100vh;
+        overflow-y: auto;
     }
 
     .home-content {
         max-width: 100%;
-        margin-bottom: 2rem;
-    }
-    
-    .home-content h1 {
-        font-size: 4rem;
+        margin-bottom: 1rem;
     }
     
     .home-content h3 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .home-content h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .home-content h3 {
+        font-size: 2.2rem;
+    }
+    
+    .home-content p {
+        font-size: 1.4rem;
+        margin-bottom: 1.2rem;
     }
 
     .home-img {
@@ -609,10 +616,27 @@ a:hover {
     }
 
     .home-img img {
-        width: 60vw;
-        max-width: 300px;
+        width: 50vw;
+        max-width: 250px;
         border-radius: 50%;
-        margin-top: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .social-media {
+        margin: 1.5rem 0;
+    }
+    
+    .social-media a {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.8rem;
+        margin: 0 0.8rem;
+    }
+    
+    .btn {
+        margin-top: 1rem;
+        padding: 0.9rem 2.5rem;
+        font-size: 1.4rem;
     }
     
     /* Services/Reflections Boxes */
