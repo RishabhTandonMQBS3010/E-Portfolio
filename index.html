@@ -23,7 +23,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* === Balanced Navy + White Theme === */
 :root {
     --bg-color: #1b2a49;        
     --second-bg-color: #f4f7fb; 
@@ -33,7 +32,6 @@
     --highlight-color: #5fa8f5; 
 }
 
-/* === Global Layout === */
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -44,7 +42,6 @@ body {
     color: var(--text-color);
 }
 
-/* === One Full Page per Section === */
 section {
     min-height: 100vh;
     display: flex;
@@ -55,15 +52,6 @@ section {
     box-sizing: border-box;
 }
 
-/* Allow internal scrolling if content exceeds one page */
-.capstone, .reflections, .projects, .career, .summary {
-    height: 100vh;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-    padding: 8rem 9%;
-}
-
-/* Home section layout */
 .home {
     height: 100vh;
     display: flex;
@@ -73,7 +61,6 @@ section {
     padding: 10rem 9%;
 }
 
-/* === Alternating Section Design === */
 .home, .portfolio {
     background: var(--bg-color);
     color: var(--text-color);
@@ -84,7 +71,6 @@ section {
     color: var(--dark-text-color);
 }
 
-/* === Header === */
 .header {
     position: fixed;
     top: 0;
@@ -109,7 +95,6 @@ section {
     font-weight: 600;
 }
 
-/* === Navbar === */
 .navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
@@ -128,7 +113,6 @@ section {
     display: none;
 }
 
-/* === Home Section === */
 .home-content {
     max-width: 600px;
 }
@@ -156,7 +140,6 @@ span {
     color: var(--highlight-color);
 }
 
-/* === Social Icons === */
 .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -177,7 +160,6 @@ span {
     box-shadow: 0 0 1rem var(--highlight-color);
 }
 
-/* === Buttons === */
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -195,7 +177,6 @@ span {
     box-shadow: 0 0 1.5rem var(--highlight-color);
 }
 
-/* === About Section === */
 .about {
     display: flex;
     justify-content: center;
@@ -241,7 +222,6 @@ span {
     margin-bottom: 1.5rem;
 }
 
-/* === Services Section === */
 .services h2 {
     text-align: center;
     color: var(--dark-text-color);
@@ -296,7 +276,6 @@ span {
     margin-bottom: 0;
 }
 
-/* === Career Section === */
 .career {
     background: var(--second-bg-color);
     color: var(--dark-text-color);
@@ -322,19 +301,6 @@ span {
     margin-right: auto;
 }
 
-.career ul {
-    font-size: 1.6rem;
-    line-height: 2;
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding-left: 3rem;
-}
-
-.career li {
-    margin-bottom: 1rem;
-}
-
-/* === Summary Section === */
 .summary {
     background: var(--second-bg-color);
     padding: 8rem 9%;
@@ -350,7 +316,6 @@ span {
     color: var(--main-color);
 }
 
-/* === Portfolio === */
 .portfolio {
     background: var(--bg-color);
     padding: 8rem 9%;
@@ -390,7 +355,6 @@ span {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 2rem;
     display: block;
     transition: transform 0.5s ease;
 }
@@ -425,7 +389,6 @@ span {
     color: #f1f5f9;
 }
 
-/* === Contact Section === */
 .contact form {
     max-width: 70rem;
     margin: 0 auto;
@@ -449,7 +412,6 @@ span {
     border-color: var(--main-color);
 }
 
-/* === Footer === */
 .footer {
     background: var(--second-bg-color);
     color: var(--dark-text-color);
@@ -484,7 +446,6 @@ span {
     font-size: 2rem;
 }
 
-/* === Hyperlinks === */
 a {
   color: var(--highlight-color);
   text-decoration: none;
@@ -495,31 +456,15 @@ a:hover {
   color: var(--main-color);
 }
 
-/* === Responsive === */
-
-/* Large Tablets and Small Desktops */
 @media (max-width: 1200px) {
     html { font-size: 58%; }
-    
-    section {
-        padding: 6rem 7%;
-    }
-    
-    .home {
-        padding: 8rem 7%;
-    }
+    section { padding: 6rem 7%; }
+    .home { padding: 8rem 7%; }
 }
 
-/* Tablets */
 @media (max-width: 991px) {
     html { font-size: 56%; }
-    
-    /* Mobile Navigation */
-    #menu-icon { 
-        display: block;
-        cursor: pointer;
-    }
-    
+    #menu-icon { display: block; cursor: pointer; }
     .navbar {
         position: absolute;
         top: 100%;
@@ -531,53 +476,30 @@ a:hover {
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
         display: none;
     }
-    
-    .navbar.active {
-        display: block;
-    }
-    
+    .navbar.active { display: block; }
     .navbar a {
         display: block;
         font-size: 2rem;
         margin: 2rem 0;
         color: var(--text-color);
     }
-    
-    /* About/Capstone Section */
     .about {
         flex-direction: column;
         text-align: center;
     }
-    
     .about-img img {
         width: 70vw;
         max-width: 400px;
         margin-bottom: 3rem;
     }
-    
-    .about-content {
-        max-width: 100%;
-    }
-    
-    /* Portfolio */
-    .portfolio-box {
-        max-width: 100%;
-    }
+    .about-content { max-width: 100%; }
+    .portfolio-box { max-width: 100%; }
 }
 
-/* Mobile Landscape and Small Tablets */
 @media (max-width: 768px) {
     html { font-size: 50%; }
-    
-    .header {
-        padding: 2rem 5%;
-    }
-    
-    section {
-        padding: 6rem 5%;
-    }
-    
-    /* Home Section */
+    .header { padding: 2rem 5%; }
+    section { padding: 6rem 5%; }
     .home {
         flex-direction: column;
         text-align: center;
@@ -586,102 +508,61 @@ a:hover {
         height: 100vh;
         overflow-y: auto;
     }
-
     .home-content {
         max-width: 100%;
         margin-bottom: 1rem;
     }
-    
     .home-content h3 {
         font-size: 2.5rem;
         margin-bottom: 0.5rem;
     }
-    
     .home-content h1 {
         font-size: 3.5rem;
         margin-bottom: 1rem;
     }
-    
-    .home-content h3 {
-        font-size: 2.2rem;
-    }
-    
     .home-content p {
         font-size: 1.4rem;
         margin-bottom: 1.2rem;
     }
-
     .home-img {
         order: 2;
     }
-
     .home-img img {
         width: 50vw;
         max-width: 250px;
         border-radius: 50%;
         margin-top: 1rem;
     }
-    
     .social-media {
         margin: 1.5rem 0;
     }
-    
     .social-media a {
         width: 3.5rem;
         height: 3.5rem;
         font-size: 1.8rem;
         margin: 0 0.8rem;
     }
-    
     .btn {
         margin-top: 1rem;
         padding: 0.9rem 2.5rem;
         font-size: 1.4rem;
     }
-    
-    /* Services/Reflections Boxes */
-    .services-container {
-        flex-direction: column;
-    }
-    
+    .services-container { flex-direction: column; }
     .services-box {
         width: 100%;
         max-width: 500px;
         margin: 0 auto;
     }
-    
-    /* Portfolio */
     .portfolio-container {
         flex-direction: column;
         align-items: center;
     }
-    
     .portfolio-box {
         max-width: 500px;
         width: 100%;
     }
-    
-    /* Career Section */
-    .career {
-        padding: 6rem 5%;
-    }
-    
-    .career h2 {
-        font-size: 3.2rem;
-    }
-    
-    .career p,
-    .career ul {
-        font-size: 1.5rem;
-    }
-    
-    /* Contact Form */
-    .contact input,
-    .contact textarea {
-        font-size: 1.5rem;
-    }
-    
-    /* Footer */
+    .career { padding: 6rem 5%; }
+    .career h2 { font-size: 3.2rem; }
     .footer {
         flex-direction: column;
         text-align: center;
@@ -689,177 +570,36 @@ a:hover {
     }
 }
 
-/* Mobile Portrait */
 @media (max-width: 450px) {
     html { font-size: 50%; }
-    
-    .header {
-        padding: 2rem 4%;
-    }
-    
-    section {
-        padding: 5rem 4%;
-    }
-    
-    /* Home Section */
-    .home {
-        padding: 8rem 4% 4rem;
-    }
-    
-    .home-content h1 {
-        font-size: 3.5rem;
-    }
-    
-    .home-content h3 {
-        font-size: 2.4rem;
-    }
-    
-    .home-content p {
-        font-size: 1.4rem;
-    }
-
-    .home-img img {
-        width: 70vw;
-        max-width: 250px;
-    }
-    
-    /* Social Media Icons */
-    .social-media a {
-        width: 3.5rem;
-        height: 3.5rem;
-        font-size: 1.8rem;
-        margin: 2rem 1rem 2rem 0;
-    }
-    
-    /* Buttons */
-    .btn {
-        padding: 0.8rem 2rem;
-        font-size: 1.4rem;
-    }
-    
-    /* About Content */
-    .about-img img {
-        width: 85vw;
-    }
-    
-    .about-content h2,
-    .heading {
-        font-size: 3rem;
-    }
-    
-    .about-content h3 {
-        font-size: 2rem;
-    }
-    
-    .about-content p {
-        font-size: 1.4rem;
-    }
-    
-    /* Services Boxes */
-    .services h2 {
-        font-size: 3rem;
-    }
-    
-    .services-box {
-        padding: 2rem 1.5rem;
-    }
-    
-    .services-box i {
-        font-size: 4rem;
-    }
-    
-    .services-box h3 {
-        font-size: 1.8rem;
-    }
-    
-    .services-box p {
-        font-size: 1.3rem;
-    }
-    
-    /* Portfolio */
-    .portfolio h2 {
-        font-size: 3rem;
-    }
-    
-    .portfolio-box {
-        max-width: 100%;
-    }
-    
-    .portfolio-layer h4 {
-        font-size: 2rem;
-    }
-    
-    .portfolio-layer p {
-        font-size: 1.3rem;
-        padding: 0 1rem;
-    }
-    
-    /* Career */
-    .career h2 {
-        font-size: 2.8rem;
-    }
-    
-    .career p,
-    .career ul {
-        font-size: 1.4rem;
-    }
-    
-    .career ul {
-        padding-left: 2rem;
-    }
-    
-    /* Summary */
-    .summary h2 {
-        font-size: 3rem;
-    }
-    
-    /* Contact */
-    .contact h2 {
-        font-size: 3rem;
-    }
-    
-    .contact form {
-        max-width: 100%;
-    }
-    
-    .contact input,
-    .contact textarea {
-        padding: 1.2rem;
-        font-size: 1.4rem;
-    }
-    
-    /* Footer */
-    .footer p {
-        font-size: 1.2rem;
-    }
+    .header { padding: 2rem 4%; }
+    section { padding: 5rem 4%; }
+    .home { padding: 8rem 4% 4rem; }
+    .about-img img { width: 85vw; }
+    .about-content h2, .heading { font-size: 3rem; }
+    .services h2 { font-size: 3rem; }
+    .services-box { padding: 2rem 1.5rem; }
+    .services-box i { font-size: 4rem; }
+    .services-box h3 { font-size: 1.8rem; }
+    .services-box p { font-size: 1.3rem; }
+    .portfolio h2 { font-size: 3rem; }
+    .career h2 { font-size: 2.8rem; }
+    .summary h2 { font-size: 3rem; }
+    .contact h2 { font-size: 3rem; }
 }
 
-/* Extra Small Devices */
 @media (max-width: 350px) {
     html { font-size: 45%; }
-    
-    .home-content h1 {
-        font-size: 3rem;
-    }
-    
-    .home-img img {
-        width: 80vw;
-    }
-    
-    .logo {
-        font-size: 2rem;
-    }
-    
-    #menu-icon {
-        font-size: 3rem;
-    }
+    .home-content h1 { font-size: 3rem; }
+    .home-img img { width: 80vw; }
+    .logo { font-size: 2rem; }
+    #menu-icon { font-size: 3rem; }
 }
   </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
   <header class="header">
     <a href="#" class="logo">MQBS3010</a>
     <i class='bx bx-menu' id="menu-icon"></i>
@@ -870,12 +610,12 @@ a:hover {
       <a href="#reflections">Reflections</a>
       <a href="#projects">Projects</a>
       <a href="#career">Career</a>
+      <a href="#koda">Why Koda Capital</a>
       <a href="#summary">Summary</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- HOME / ABOUT -->
   <section class="home" id="home">
     <div class="home-content">
       <h3>Hello, I'm</h3>
@@ -911,7 +651,6 @@ a:hover {
     </div>
   </section>
 
-  <!-- CAPSTONE PROJECT -->
   <section class="about" id="capstone">
     <div class="about-img">
       <img src="images/about1.jpg" alt="TerraCare" style="border-radius: 2rem;">
@@ -948,7 +687,6 @@ a:hover {
     </div>
   </section> 
 
-  <!-- REFLECTIONS -->
   <section class="services" id="reflections">
     <h2 class="heading">Skills & <span>Learning Reflections</span></h2>
     <div class="services-container">
@@ -1000,7 +738,6 @@ a:hover {
     </div>
   </section>
 
-  <!-- PROJECTS -->
   <section class="portfolio" id="projects">
     <h2 class="heading">My <span>Projects</span></h2>
     <div class="portfolio-container">
@@ -1043,7 +780,6 @@ a:hover {
     </div>
   </section>
 
-  <!-- CAREER -->
   <section class="career" id="career">
     <h2>Career & <span>Employability Development</span></h2>
     <p>
@@ -1077,7 +813,76 @@ a:hover {
     </p>
   </section>
 
-  <!-- FINAL REFLECTION -->
+  <section class="about" id="koda">
+    <div class="about-content" style="max-width: 1200px;">
+      <h2 class="heading">Why I Am Applying to <span>Koda Capital</span></h2>
+
+      <p>
+        I selected the Koda Capital 2026 Graduate Program because it provides the opportunity to build capability across investment services, client advisory, and operational excellence. 
+        This closely aligns with the cross-functional experience I gained throughout MQBS3010, where I worked on financial modelling, stakeholder communication, and sustainability consulting through the TerraCare project.
+      </p>
+
+      <p>
+        <a href="https://www.linkedin.com/in/adam-garth/" target="_blank">The Assurance Associate at EY</a> 
+        reminded us that career growth requires proactive engagement with real business problems. 
+        TerraCare challenged me to balance financial metrics with client value, which is also central to Koda's client-first philosophy in wealth advisory and investment solutions.
+      </p>
+
+      <p>
+        <a href="https://www.linkedin.com/in/fahmida-mridha/?originalSubdomain=au" target="_blank">The Restructuring and Recovery Intermediate Accountant at Vincents</a> 
+        emphasised the importance of financial transparency and integrity. 
+        I applied this mindset by designing cost structures and capital budgeting that clearly demonstrated financial returns for farming clients in a sustainability setting. 
+        This approach aligns with Koda's commitment to delivering genuinely independent advice and better outcomes for clients.
+      </p>
+
+      <p>
+        With a passion for sustainable finance and ongoing development in investment analytical skills, I am committed to contributing to Koda Capital's mission. 
+        The graduate program's rotational structure across portfolio management, client services, and operations will allow me to develop a comprehensive understanding of wealth management while building expertise in ESG and impact investing.
+      </p>
+
+      <h3 style="font-size: 2.4rem; color: var(--main-color); margin-top: 3rem; margin-bottom: 2rem;">Skills Alignment with Koda Requirements</h3>
+      
+      <div style="overflow-x: auto;">
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 2rem;">
+          <thead>
+            <tr style="background: var(--main-color); color: #fff;">
+              <th style="padding: 1.5rem; text-align: left; font-size: 1.5rem; border: 1px solid #dbe2ef;">Koda Requirement</th>
+              <th style="padding: 1.5rem; text-align: left; font-size: 1.5rem; border: 1px solid #dbe2ef;">Evidence Through MQBS3010</th>
+              <th style="padding: 1.5rem; text-align: left; font-size: 1.5rem; border: 1px solid #dbe2ef;">Future Development</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid #dbe2ef;">
+              <td style="padding: 1.2rem; font-size: 1.4rem; border: 1px solid #dbe2ef;">Support advisers and client onboarding</td>
+              <td style="padding: 1.2rem; font-size: 1.4rem; border: 1px solid #dbe2ef;">TerraCare stakeholder engagement design</td>
+              <td style="padding: 1.2rem; font-size: 1.4rem; border: 1px solid #dbe2ef;">Build CRM proficiency (HubSpot course by Dec 2025)</td>
+            </tr>
+            <tr style="background: #f8f9fa;">
+              <td style="padding: 1.2rem; font-size: 1.4rem; border: 1px solid #dbe2ef;">Investment research and analysis</td>
+              <td style="padding: 1.2rem; font-size: 1.4rem; border: 1px solid #dbe2ef;">TerraCare ROI and NPV financial modelling</td>
+              <td style="padding: 1.2rem; font-size: 1.4rem; border: 1px solid #dbe2ef;">Complete Bloomberg Market Concepts certification</td>
+            </tr>
+            <tr style="border-bottom: 1px solid #dbe2ef;">
+              <td style="padding: 1.2rem; font-size: 1.4rem; border: 1px solid #dbe2ef;">Task management and self-initiative</td>
+              <td style="padding: 1.2rem; font-size: 1.4rem; border: 1px solid #dbe2ef;">Led finance chapter and reporting deadlines</td>
+              <td style="padding: 1.2rem; font-size: 1.4rem; border: 1px solid #dbe2ef;">Weekly productivity journaling and goal tracking</td>
+            </tr>
+            <tr style="background: #f8f9fa;">
+              <td style="padding: 1.2rem; font-size: 1.4rem; border: 1px solid #dbe2ef;">Strong communication skills</td>
+              <td style="padding: 1.2rem; font-size: 1.4rem; border: 1px solid #dbe2ef;">Presented financial recommendations to interdisciplinary team</td>
+              <td style="padding: 1.2rem; font-size: 1.4rem; border: 1px solid #dbe2ef;">Present TerraCare at MQ Business Showcase</td>
+            </tr>
+            <tr>
+              <td style="padding: 1.2rem; font-size: 1.4rem; border: 1px solid #dbe2ef;">Team collaboration</td>
+              <td style="padding: 1.2rem; font-size: 1.4rem; border: 1px solid #dbe2ef;">Cross-discipline Work Integrated Learning team</td>
+              <td style="padding: 1.2rem; font-size: 1.4rem; border: 1px solid #dbe2ef;">Seek mentorship in wealth advisory sector</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
   <section class="summary" id="summary">
     <h2 class="heading">Final <span>Reflection</span></h2>
     <div style="max-width: 1400px; width: 100%; background: #fff; border: 1px solid #dbe2ef; border-radius: 2rem; padding: 3rem 4rem; margin-bottom: 3rem;">
@@ -1114,7 +919,6 @@ a:hover {
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
     <form action="mailto:rishabhrajtandon@gmail.com" method="post" enctype="text/plain">
@@ -1131,7 +935,6 @@ a:hover {
     </form>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-text">
       <p>© 2025 Rishabh Raj Tandon | MQBS3010 ePortfolio | All Rights Reserved</p>
@@ -1141,11 +944,9 @@ a:hover {
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
-// === TOGGLE NAVBAR ICON ===
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 menuIcon.onclick = () => {
@@ -1153,7 +954,6 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 };
 
-// === SCROLL SECTIONS ACTIVE LINK ===
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 window.onscroll = () => {
@@ -1170,16 +970,13 @@ window.onscroll = () => {
         }
     });
 
-    // === STICKY HEADER ===
     let header = document.querySelector('header');
     header.classList.toggle('sticky', top > 100);
 
-    // === REMOVE NAVBAR WHEN LINK CLICKED (MOBILE) ===
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
 
-// === SCROLL REVEAL ANIMATIONS ===
 ScrollReveal({
     distance: '80px',
     duration: 1800,
@@ -1192,7 +989,6 @@ ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact 
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
-// === TYPED TEXT EFFECT ===
 const typed = new Typed('.multiple-text', {
     strings: [
         'Finance Student',
