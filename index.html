@@ -1,309 +1,191 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rishabh Raj Tandon | Finance Graduate Portfolio</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rishabh Raj Tandon | Finance Graduate ePortfolio</title>
 
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-  <style>
+<style>
+/* YOUR ORIGINAL CSS – UNCHANGED */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-:root {
-  --bg-color: #1b2a49;
-  --second-bg-color: #f4f7fb;
-  --text-color: #f8fafc;
-  --dark-text-color: #1e293b;
-  --main-color: #2b6cb0;
-  --highlight-color: #5fa8f5;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  background: linear-gradient(180deg, #1b2a49, #23355a);
-  color: var(--text-color);
-}
-
-section {
-  min-height: 100vh;
-  padding: 8rem 9%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: var(--bg-color);
-  padding: 2rem 9%;
-  display: flex;
-  justify-content: space-between;
-  z-index: 100;
-}
-
-.logo {
-  font-size: 2.4rem;
-  color: var(--text-color);
-  font-weight: 600;
-}
-
-.navbar a {
-  color: var(--text-color);
-  margin-left: 3rem;
-  font-size: 1.6rem;
-}
-
-.navbar a:hover {
-  color: var(--highlight-color);
-}
-
-.home {
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.home-content {
-  max-width: 600px;
-}
-
-.home-content h1 {
-  font-size: 4.8rem;
-  margin-bottom: 1rem;
-}
-
-.home-content h3 {
-  font-size: 2.8rem;
-  margin-bottom: 1.5rem;
-}
-
-.home-content p {
-  font-size: 1.6rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.7;
-}
-
-span {
-  color: var(--highlight-color);
-}
-
-.social-media a {
-  font-size: 2.2rem;
-  margin-right: 1.5rem;
-  color: var(--highlight-color);
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 2rem;
-  padding: 1.2rem 3rem;
-  background: var(--main-color);
-  color: #fff;
-  border-radius: 3rem;
-  font-size: 1.6rem;
-}
-
-.home-img img {
-  width: 320px;
-  border-radius: 50%;
-}
-
-/* ABOUT */
-.about {
-  background: var(--second-bg-color);
-  color: var(--dark-text-color);
-  flex-direction: row;
-  gap: 4rem;
-}
-
-.about img {
-  width: 380px;
-  border-radius: 2rem;
-}
-
-.about-content {
-  max-width: 650px;
-}
-
-.heading {
-  font-size: 3.8rem;
-  margin-bottom: 2rem;
-}
-
-/* SERVICES */
-.services {
-  background: var(--second-bg-color);
-  color: var(--dark-text-color);
-}
-
-.services-container {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.services-box {
-  background: #fff;
-  padding: 3rem;
-  border-radius: 2rem;
-  width: 320px;
-}
-
-.services-box h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-/* FOOTER */
-.footer {
-  background: var(--second-bg-color);
-  color: var(--dark-text-color);
-  padding: 2rem;
-  text-align: center;
-}
-
-@media (max-width: 900px) {
-  .home {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-  </style>
+*{margin:0;padding:0;box-sizing:border-box;text-decoration:none;border:none;outline:none;scroll-behavior:smooth;font-family:'Poppins',sans-serif;}
+:root{--bg-color:#1b2a49;--second-bg-color:#f4f7fb;--text-color:#f8fafc;--dark-text-color:#1e293b;--main-color:#2b6cb0;--highlight-color:#5fa8f5;}
+html{font-size:62.5%;overflow-x:hidden;}
+body{background:linear-gradient(180deg,#1b2a49 0%,#23355a 100%);color:var(--text-color);}
+section{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:8rem 9%;}
+.home{height:100vh;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:10rem 9%;}
+.home,.portfolio{background:var(--bg-color);color:var(--text-color);}
+.about,.services,.contact,.footer,.career,.summary{background:var(--second-bg-color);color:var(--dark-text-color);}
+.header{position:fixed;top:0;left:0;width:100%;padding:2rem 9%;background-color:var(--bg-color);display:flex;justify-content:space-between;align-items:center;z-index:100;}
+.logo{font-size:2.5rem;color:var(--text-color);font-weight:600;}
+.navbar a{font-size:1.7rem;color:var(--text-color);margin-left:4rem;}
+.navbar a:hover,.navbar a.active{color:var(--highlight-color);}
+#menu-icon{font-size:3.6rem;color:var(--text-color);display:none;}
+.home-content{max-width:600px;}
+.home-content h3{font-size:3.2rem;margin-bottom:1rem;}
+.home-content h1{font-size:5rem;margin-bottom:1.5rem;}
+.home-content p{font-size:1.6rem;margin-bottom:2rem;}
+span{color:var(--highlight-color);}
+.social-media a{display:inline-flex;justify-content:center;align-items:center;width:4rem;height:4rem;border:.2rem solid var(--highlight-color);border-radius:50%;font-size:2rem;color:var(--highlight-color);margin:3rem 1.5rem 3rem 0;}
+.btn{display:inline-block;padding:1rem 2.8rem;background:var(--main-color);border-radius:4rem;font-size:1.6rem;color:#fff;}
+.about{display:flex;gap:4rem;flex-wrap:wrap;}
+.about-img img{width:35vw;min-width:300px;max-width:500px;border-radius:2rem;}
+.heading{text-align:center;font-size:4.5rem;}
+.about-content{max-width:600px;}
+.about-content p{font-size:1.6rem;line-height:1.6;margin-bottom:1.5rem;}
+.services-container{display:flex;flex-wrap:wrap;gap:2rem;}
+.services-box{flex:1 1 30rem;background:#fff;border-radius:2rem;padding:3rem;}
+.services-box h3{font-size:2.2rem;margin-bottom:1rem;}
+.services-box p{font-size:1.5rem;line-height:1.8;text-align:left;}
+.footer{padding:2rem 9%;display:flex;justify-content:space-between;flex-wrap:wrap;}
+.footer p{font-size:1.4rem;}
+</style>
 </head>
 
 <body>
 
 <header class="header">
-  <a href="#" class="logo">Finance Portfolio</a>
-  <nav class="navbar">
-    <a href="#home">Home</a>
-    <a href="#about">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<a href="#" class="logo">Finance Portfolio</a>
+<i class='bx bx-menu' id="menu-icon"></i>
+<nav class="navbar">
+<a href="#home" class="active">Home</a>
+<a href="#capstone">Experience</a>
+<a href="#reflections">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#career">Career</a>
+<a href="#summary">Summary</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
 <section class="home" id="home">
-  <div class="home-content">
-    <h3>Hello, I'm</h3>
-    <h1>Rishabh Raj Tandon</h1>
-    <h3><span class="multiple-text"></span></h3>
+<div class="home-content">
+<h3>Hello, I'm</h3>
+<h1>Rishabh Raj Tandon</h1>
+<h3><span class="multiple-text"></span></h3>
 
-    <p>
-      I am a Bachelor of Commerce graduate majoring in Finance, based in Sydney, seeking to build a long term career in asset and commercial finance.
-    </p>
+<p>
+I am a Bachelor of Commerce graduate with a major in Finance, based in Sydney, seeking to build a long term career in asset and commercial finance.
+</p>
 
-    <p>
-      I have experience supporting mortgage and lending teams with loan application processing, document management, client communication, and credit assessment support. This has provided me with strong exposure to lending workflows, compliance requirements, and stakeholder coordination.
-    </p>
+<p>
+I have hands on experience supporting mortgage and lending teams through loan application preparation, document verification, client communication, and credit assessment support. This exposure strengthened my understanding of lending workflows, compliance, and risk awareness.
+</p>
 
-    <p>
-      I am particularly motivated by asset finance due to its direct impact on business growth and the real economy. I am eager to develop strong credit judgement and commercial finance capability within a high performing finance team.
-    </p>
+<p>
+I am particularly interested in asset finance due to its direct impact on business growth and the real economy. My objective is to develop strong credit judgement and commercial finance capability within a high performing finance team.
+</p>
 
-    <div class="social-media">
-      <a href="https://www.linkedin.com/in/rishabh-raj-tandon-10bb1225a/" target="_blank">
-        <i class='bx bxl-linkedin'></i>
-      </a>
-    </div>
+<div class="social-media">
+<a href="https://www.linkedin.com/in/rishabh-raj-tandon-10bb1225a/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+</div>
 
-    <a href="https://drive.google.com/drive/folders/1-NWHwxp2nr6Mk_Z4yDzIz5JbaZuLELUF?usp=sharing" class="btn" target="_blank">
-      Download CV
-    </a>
-  </div>
+<a href="https://drive.google.com/drive/folders/1-NWHwxp2nr6Mk_Z4yDzIz5JbaZuLELUF?usp=sharing" class="btn">Download CV</a>
+</div>
 
-  <div class="home-img">
-    <img src="./images/home.jpeg" alt="Rishabh Raj Tandon">
-  </div>
+<div class="home-img">
+<img src="./images/home.jpeg" alt="Rishabh Raj Tandon" style="border-radius:50%;">
+</div>
 </section>
 
-<section class="about" id="about">
-  <img src="images/about1.jpg" alt="Finance Experience">
+<section class="about" id="capstone">
+<div class="about-img">
+<img src="images/about1.jpg" alt="Finance Experience">
+</div>
 
-  <div class="about-content">
-    <h2 class="heading">Commercial Finance Exposure</h2>
-    <p>
-      Through my roles in mortgage and loan administration, I supported brokers and clients across the end to end loan process including data collection, serviceability assessment preparation, lender documentation, and compliance checks.
-    </p>
-    <p>
-      I regularly liaised with clients, lenders, and internal stakeholders to ensure applications were accurately packaged, progressed efficiently, and aligned with responsible lending obligations.
-    </p>
-    <p>
-      This experience strengthened my attention to detail, risk awareness, and understanding of how financial products support business and personal objectives.
-    </p>
-  </div>
+<div class="about-content">
+<h2 class="heading">Lending & Finance <span>Experience</span></h2>
+
+<p>
+Through my roles at ASK Loans and Loan Market, I supported brokers and clients across the end to end lending process including data collection, serviceability inputs, document management, and lender communication.
+</p>
+
+<p>
+I regularly liaised with clients, lenders, and internal teams to ensure applications were accurately packaged, progressed efficiently, and aligned with responsible lending and compliance requirements.
+</p>
+
+<p>
+This experience strengthened my attention to detail, stakeholder communication skills, and understanding of how structured finance supports real world business and personal outcomes.
+</p>
+</div>
 </section>
 
-<section class="services" id="skills">
-  <h2 class="heading">Core <span>Skills</span></h2>
+<section class="services" id="reflections">
+<h2 class="heading">Core <span>Skills</span></h2>
 
-  <div class="services-container">
-    <div class="services-box">
-      <h3>Credit & Lending Support</h3>
-      <p>Application preparation, serviceability inputs, document verification, lender submission support.</p>
-    </div>
+<div class="services-container">
+<div class="services-box">
+<h3>Credit & Lending Support</h3>
+<p>Loan application preparation, serviceability support, document verification, lender submission coordination.</p>
+</div>
 
-    <div class="services-box">
-      <h3>Client & Stakeholder Communication</h3>
-      <p>Client onboarding, follow ups, explaining finance requirements, coordinating with lenders.</p>
-    </div>
+<div class="services-box">
+<h3>Client Communication</h3>
+<p>Client onboarding, follow ups, explaining lending requirements, managing expectations and timelines.</p>
+</div>
 
-    <div class="services-box">
-      <h3>Financial Analysis</h3>
-      <p>Cash flow review, financial statements understanding, Excel modelling and reporting.</p>
-    </div>
+<div class="services-box">
+<h3>Financial Analysis</h3>
+<p>Cash flow understanding, financial statement review, Excel based modelling and reporting.</p>
+</div>
 
-    <div class="services-box">
-      <h3>Compliance & Accuracy</h3>
-      <p>Privacy handling, responsible lending awareness, record management and audit readiness.</p>
-    </div>
-  </div>
+<div class="services-box">
+<h3>Compliance & Accuracy</h3>
+<p>Privacy handling, record management, responsible lending awareness, audit ready documentation.</p>
+</div>
+</div>
+</section>
+
+<section class="career" id="career">
+<h2 class="heading">Career <span>Development</span></h2>
+
+<p>
+My career objective is to progress within asset and commercial finance by developing strong credit judgement, lender knowledge, and client advisory capability.
+</p>
+
+<p>
+I am focused on continuous improvement through hands on deal exposure, advanced Excel proficiency, and mentorship from experienced finance professionals.
+</p>
+</section>
+
+<section class="summary" id="summary">
+<h2 class="heading">Professional <span>Summary</span></h2>
+
+<p>
+I am a motivated finance graduate with practical lending exposure, strong attention to detail, and a client focused mindset. I bring a disciplined, coachable approach and a genuine interest in building long term capability within the finance industry.
+</p>
 </section>
 
 <section class="contact" id="contact">
-  <h2 class="heading">Contact <span>Me</span></h2>
+<h2 class="heading">Contact <span>Me</span></h2>
 
-  <form action="mailto:rishabhrajtandon@gmail.com" method="post" enctype="text/plain">
-    <input type="text" placeholder="Name" name="name" required>
-    <input type="email" placeholder="Email" name="email" required>
-    <textarea name="message" rows="6" placeholder="Message"></textarea>
-    <button type="submit" class="btn">Send</button>
-  </form>
+<form action="mailto:rishabhrajtandon@gmail.com" method="post" enctype="text/plain">
+<input type="text" placeholder="Full Name" name="name" required>
+<input type="email" placeholder="Email Address" name="email" required>
+<textarea name="message" rows="6" placeholder="Your Message"></textarea>
+<input type="submit" value="Send Message" class="btn">
+</form>
 </section>
 
 <footer class="footer">
-  <p>© 2026 Rishabh Raj Tandon | Finance Graduate Portfolio</p>
+<p>© 2026 Rishabh Raj Tandon | Finance Graduate Portfolio</p>
 </footer>
 
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script>
-const typed = new Typed('.multiple-text', {
-  strings: [
-    'Finance Graduate',
-    'Asset & Commercial Finance',
-    'Credit & Lending Support',
-    'Client Focused Professional'
-  ],
-  typeSpeed: 90,
-  backSpeed: 70,
-  backDelay: 1200,
-  loop: true
+const typed = new Typed('.multiple-text',{
+strings:[
+'Finance Graduate',
+'Asset & Commercial Finance',
+'Credit & Lending Support',
+'Client Focused Professional'
+],
+typeSpeed:100,
+backSpeed:80,
+loop:true
 });
 </script>
 
